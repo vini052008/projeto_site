@@ -160,8 +160,6 @@ h2 {
   border: 1px solid var(--marrom-medio);
   border-radius: 10px;
   font-size: 1rem;
-}
-
   font-family: inherit;
 }
 
@@ -204,4 +202,17 @@ h2 {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+#contato {
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo-contato {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--texto);
+  margin-bottom: 20px;
 }
