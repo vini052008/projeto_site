@@ -1,6 +1,6 @@
 :root {
-  --marrom-claro: #f5e9dc;
-  --marrom-medio: #d7bfa9;
+  --marrom-claro: #ffffff;
+  --marrom-medio: #825831;
   --marrom-escuro: #8b5e3c;
   --texto: #3e2b1a;
   --pastel-rosa: #e7c3d4;
@@ -18,7 +18,7 @@ body {
 .topo {
   background-color: var(--marrom-medio);
   padding: 20px 20px 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -33,15 +33,15 @@ body {
 
 
 .logo-img {
-  width: 60px;
-  height: 60px;
+  width: clamp(80px, 8vw, 100px);
+  height: clamp(80px, 8vw, 100px);
   border-radius: 15px;
   background-color: white;
   object-fit: cover;
 }
 
 .topo h1 {
-  font-size: 2em;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   color: white;
   margin: 0;
   margin-left: auto;
@@ -66,7 +66,7 @@ body {
   padding: 10px 18px;
   border-radius: 30px;
   font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s, transform 0.2s;
 }
 
