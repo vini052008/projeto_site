@@ -49,6 +49,14 @@ body {
   text-align: center;
 }
 
+h2 {
+  text-align: left;
+  padding-left: 40px; /* Ajuste este valor conforme necessário */
+  font-size: 2.8em;
+  margin-top: 40px;
+}
+
+
 
 
 .botoes-navegacao {
