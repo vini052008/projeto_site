@@ -1,67 +1,114 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5e6d9;
-  margin: 0;
-  padding: 0;
-  color: #5a4033;
+/* Cores em tons pastéis de marrom */
+:root {
+  --marrom-claro: #f3e7dd;
+  --marrom-escuro: #8b5e3c;
+  --bege: #fff8f0;
+  --texto: #4b2e1c;
 }
 
-.topo {
-  background-color: #d3b8a1;
-  padding: 10px;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--marrom-claro);
+  color: var(--texto);
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: var(--bege);
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  width: 80px;
+  width: 50px;
+  margin-right: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.logo h1 {
+  font-size: 1.4em;
+  color: var(--marrom-escuro);
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.secao {
-  padding: 20px;
-  margin: 20px;
-  background-color: #fdf7f2;
-  border-radius: 8px;
-}
-
-.galeria {
+.nav-links {
   display: flex;
   gap: 10px;
 }
 
+.nav-links a {
+  background-color: var(--marrom-escuro);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #a27048;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+.secao {
+  background-color: var(--bege);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.secao h2 {
+  color: var(--marrom-escuro);
+  border-bottom: 2px solid #c8b7a6;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.secao ul {
+  list-style: disc inside;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
 .galeria img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 5px;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .voltar-topo {
   display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #d3b8a1;
-  color: #fff;
+  margin: 50px auto 0;
+  background-color: var(--marrom-escuro);
+  color: white;
+  padding: 12px 20px;
   border: none;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .voltar-topo:hover {
-  background-color: #c2a488;
+  background-color: #a27048;
 }
