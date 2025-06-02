@@ -68,8 +68,9 @@
     </section>
       <section id="contato" class="secao">
   <h2>Fale Conosco</h2>
-  <form class="form-contato" action="#" method="post" onsubmit="alert('Mensagem enviada com sucesso! (simulado)'); return false;">
 
+  <input type="checkbox" id="envio" hidden>
+  <form class="form-contato" onsubmit="document.getElementById('envio').checked = true; return false;">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
 
@@ -81,7 +82,10 @@
 
     <button type="submit" class="botao-enviar">Enviar</button>
   </form>
+
+  <p class="mensagem-enviada">Mensagem enviada com sucesso!</p>
 </section>
+
 
 
     <button class="voltar-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆ Voltar ao topo</button>

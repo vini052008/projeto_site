@@ -177,3 +177,25 @@ h2 {
   background-color: var(--pastel-rosa-hover);
   transform: scale(1.05);
 }
+.mensagem-enviada {
+  display: none;
+  text-align: center;
+  background-color: var(--pastel-rosa);
+  color: var(--texto);
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Quando o checkbox está marcado, exibe a mensagem */
+#envio:checked ~ .mensagem-enviada {
+  display: block;
+}
+
+/* Animação leve */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
