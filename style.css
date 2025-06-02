@@ -25,9 +25,12 @@ body {
 .logo-titulo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
 
 .logo-img {
   width: 60px;
@@ -41,7 +44,12 @@ body {
   font-size: 2em;
   color: white;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
+
 
 .botoes-navegacao {
   display: flex;
