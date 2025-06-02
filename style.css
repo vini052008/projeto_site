@@ -1,9 +1,10 @@
-/* Cores em tons pastéis de marrom */
 :root {
-  --marrom-claro: #f3e7dd;
+  --marrom-claro: #f5e9dc;
+  --marrom-medio: #d7bfa9;
   --marrom-escuro: #8b5e3c;
-  --bege: #fff8f0;
-  --texto: #4b2e1c;
+  --texto: #3e2b1a;
+  --pastel-rosa: #e7c3d4;
+  --pastel-rosa-hover: #d9a9c0;
 }
 
 body {
@@ -14,101 +15,54 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: var(--bege);
-  padding: 10px 20px;
+.topo {
+  background-color: var(--marrom-medio);
+  padding: 20px 20px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.logo-titulo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
+  justify-content: center;
+  gap: 15px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.logo h1 {
-  font-size: 1.4em;
-  color: var(--marrom-escuro);
-}
-
-.nav-links {
-  display: flex;
-  gap: 10px;
-}
-
-.nav-links a {
-  background-color: var(--marrom-escuro);
-  color: white;
-  padding: 8px 14px;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-  background-color: #a27048;
-}
-
-main {
-  padding: 30px 20px;
-}
-
-.secao {
-  background-color: var(--bege);
-  margin: 30px auto;
-  padding: 20px;
+.logo-img {
+  width: 60px;
+  height: 60px;
   border-radius: 15px;
-  max-width: 900px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background-color: white;
+  object-fit: cover;
 }
 
-.secao h2 {
-  color: var(--marrom-escuro);
-  border-bottom: 2px solid #c8b7a6;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+.topo h1 {
+  font-size: 2em;
+  color: white;
+  margin: 0;
 }
 
-.secao ul {
-  list-style: disc inside;
-}
-
-.galeria {
+.botoes-navegacao {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.galeria img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.botoes-navegacao a {
+  text-decoration: none;
+  background-color: var(--pastel-rosa);
+  color: var(--texto);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.voltar-topo {
-  display: block;
-  margin: 50px auto 0;
-  background-color: var(--marrom-escuro);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.voltar-topo:hover {
-  background-color: #a27048;
+.botoes-navegacao a:hover {
+  background-color: var(--pastel-rosa-hover);
+  transform: scale(1.05);
 }
