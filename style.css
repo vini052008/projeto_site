@@ -216,3 +216,23 @@ h2 {
   color: var(--texto);
   margin-bottom: 20px;
 }
+
+.secao {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.secao p {
+  margin-bottom: 1.5rem;
+}
+.secao ul {
+  padding-left: 40px;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.secao li {
+  margin-bottom: 0.5rem;
+}
