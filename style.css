@@ -63,7 +63,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 55px;
+  gap: 35px;
   margin-top: 15px;
 }
 
@@ -132,7 +132,7 @@ h2 {
 }
 
 .form-contato {
-  background-color: #f7e3ec;
+  background-color: #bb9a78a3;
   padding: 15px 20px;
   border-radius: 12px;
   max-width: 400px;  /* menor largura */
@@ -220,7 +220,7 @@ h2 {
   margin: 0 auto;
   padding: 40px 20px;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 20px;
   text-align: justify;
 }
 .secao p {
