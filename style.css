@@ -234,3 +234,33 @@ h2 {
 .secao li {
   margin-bottom: 0.5rem;
 }
+
+/* --- Estilo Responsivo para Imagens --- */
+
+img {
+  max-width: 100%;
+  height: auto;    
+  display: block;  
+}
+
+
+
+.container-de-imagem {
+  text-align: center;
+}
+
+.container-de-imagem img {
+  margin: 0 auto; 
+}
+
+
+.imagem-pequena {
+  max-width: 300px; 
+}
+
+
+
+.imagem-50-porcento {
+  width: 50%; 
+  height: auto;
+}
