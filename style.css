@@ -237,11 +237,11 @@ h2 {
 
 /* --- Estilo Responsivo para Imagens --- */
 
-img {
+body img:not(.galeria img) {
   max-width: 100%;
   height: auto;    
   display: block;  
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 
@@ -271,4 +271,20 @@ img:last-child {
 .imagem-50-porcento {
   width: 50%; 
   height: auto;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;         /* Quebra a linha se não couber tudo */
+  gap: 16px;               /* Espaço entre as imagens */
+  justify-content: flex-start; /* Alinhado à esquerda */
+  padding-top: 20px;
+}
+
+.galeria img {
+  width: 180px;            /* Tamanho menor para cada imagem */
+  height: auto;
+  border-radius: 8px;      /* Bordas arredondadas (opcional) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  object-fit: cover;
 }
