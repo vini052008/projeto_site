@@ -282,9 +282,8 @@ img:last-child {
 }
 
 .galeria img {
-  width: 180px;            /* Tamanho menor para cada imagem */
+  width: 185px;            
   height: auto;
-  border-radius: 8px;      /* Bordas arredondadas (opcional) */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   object-fit: cover;
 }
