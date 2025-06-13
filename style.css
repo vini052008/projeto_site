@@ -275,14 +275,14 @@ img:last-child {
 
 .galeria {
   display: flex;
-  flex-wrap: wrap;         /* Quebra a linha se não couber tudo */
-  gap: 16px;               /* Espaço entre as imagens */
-  justify-content: flex-start; /* Alinhado à esquerda */
+  flex-wrap: wrap;       
+  gap: 16px;              
+  justify-content: flex-start; 
   padding-top: 20px;
 }
 
 .galeria img {
-  width: 185px;            
+  width: 182px;            
   height: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   object-fit: cover;
