@@ -1,290 +1,263 @@
 :root {
-  --marrom-claro: #ffffff;
-  --marrom-medio: #825831;
-  --marrom-escuro: #8b5e3c;
-  --texto: #000000;
-  --pastel-rosa: #ba9870;
-  --pastel-rosa-hover: #b9ab8e;
+  --cor-primaria: hsl(21, 39%, 49%);
+  --cor-secundaria: #f9f9f9;
+  --cor-texto: #333;
+  --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
+  font-family: var(--fonte-principal);
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--marrom-claro);
-  color: var(--texto);
-  scroll-behavior: smooth;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  line-height: 1.6;
 }
 
-.topo {
-  background-color: var(--marrom-medio);
-  padding: 20px 20px 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.logo-titulo {
+header .topo {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 20px;
-}
-
-
-.logo-img {
-  width: clamp(80px, 8vw, 100px);
-  height: clamp(80px, 8vw, 100px);
-  border-radius: 15px;
-  background-color: white;
-  object-fit: cover;
-}
-
-.topo h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  background-color: var(--cor-primaria);
   color: white;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+ 
+  
+}
+
+.logo-container h1 {
+  font-size: clamp (2.0rem, 4 vw, 3rem);
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align:justify;
 }
 
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  padding-left: 40px;
-  font-size: 26px;
-  font-weight: 700;
-  color: #362408;
+.logo-direita {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid var(--cor-secundaria);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-
-
-
+.logo-direita:hover {
+  transform: scale(1.05);
+}
 
 .botoes-navegacao {
   display: flex;
+  gap: 15px;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 15px;
 }
 
 .botoes-navegacao a {
   text-decoration: none;
-  background-color: var(--pastel-rosa);
-  color: var(--texto);
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.botoes-navegacao a:hover {
-  background-color: var(--pastel-rosa-hover);
-  transform: scale(1.05);
-}
-
-.voltar-topo {
-  text-decoration: none;
-  background-color: var(--pastel-rosa);
-  color: var(--texto);
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s, transform 0.2s;
-  border: none;
-  cursor: pointer;
-  display: block;
-  margin: 60px auto;
-  font-size: 1rem;
-}
-
-.voltar-topo:hover {
-  background-color: var(--pastel-rosa-hover);
-  transform: scale(1.05);
-}
-
-.rodape {
-  background-color: var(--marrom-medio);
   color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 60px;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.conteudo-rodape {
-  max-width: 1200px;
-  margin: 0 auto;
+.botoes-navegacao a:hover,
+.botoes-navegacao a:focus {
+  background-color: #388e3c; /* Tom mais escuro do verde */
+  outline: none;
 }
 
-.redes-sociais a {
-  margin: 0 10px;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+main {
+  padding: 20px 30px;
+  max-width: 900px;
+  margin: auto;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.redes-sociais a:hover {
-  transform: scale(1.2);
-  color: var(--pastel-rosa);
+.secao {
+  margin-bottom: 40px;
 }
+
+.secao h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+}
+
+.secao p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.secao ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--cor-texto);
+}
+
+/* --- SEÇÃO DA GALERIA */
+.galeria {
+  display: flex;
+  gap: 15px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza as imagens na linha */
+}
+
+.galeria img {
+  /* Define uma largura máxima para as imagens, permitindo que várias caibam na linha */
+  max-width: 220px; /* Você pode ajustar este valor conforme o tamanho desejado */
+  width: 100%; /* Garante que a imagem ocupe a largura disponível dentro do max-width */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  object-fit: cover; /* Ajuda a garantir que as imagens não fiquem distorcidas */
+}
+/* --- FIM DA SEÇÃO DA GALERIA CORRIGIDA --- */
+
 
 .form-contato {
-  background-color: #bb9a78a3;
-  padding: 15px 20px;
-  border-radius: 12px;
-  max-width: 400px;  /* menor largura */
-  margin: 40px auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #d9a9c0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
 }
 
-
 .form-contato label {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: var(--texto);
+  font-weight: 600;
 }
 
 .form-contato input,
 .form-contato textarea {
-  width: 100%;                /* ocupa toda a largura do container */
-  box-sizing: border-box;     /* inclui padding e border no width */
-  padding: 10px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-  border: 1px solid var(--marrom-medio);
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: inherit;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: var(--fonte-principal);
+  font-size: 1em;
+  resize: vertical;
 }
 
 .botao-enviar {
-  background-color: var(--pastel-rosa);
-  color: var(--texto);
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 12px 20px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.botao-enviar:hover {
-  background-color: var(--pastel-rosa-hover);
-  transform: scale(1.05);
-}
-
-.mensagem-enviada {
-  display: none;
-  text-align: center;
-  background-color: var(--pastel-rosa);
-  color: var(--texto);
-  padding: 12px;
-  margin-top: 20px;
   border-radius: 8px;
   font-weight: bold;
-  animation: fadeIn 0.5s ease-in-out;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Quando o checkbox está marcado, exibe a mensagem */
-#envio:checked ~ .mensagem-enviada {
-  display: block;
+.botao-enviar:hover,
+.botao-enviar:focus {
+  background-color: #388e3c;
+  outline: none;
 }
 
-/* Animação leve */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.voltar-topo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
 }
 
-#contato {
-  text-align: center;
-  padding: 20px;
+.voltar-topo:hover,
+.voltar-topo:focus {
+  background-color: #388e3c;
+  outline: none;
 }
 
-.titulo-contato {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--texto);
-  margin-bottom: 20px;
+.rodape {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 20px 30px;
+  font-size: 0.9em;
 }
 
-.secao {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  line-height: 1.7;
-  font-size: 20px;
-  text-align: justify;
-}
-.secao p {
-  margin-bottom: 1.5rem;
-}
-.secao ul {
-  padding-left: 40px;
-  margin-top: 1rem;
-  line-height: 1.6;
-}
-.secao li {
-  margin-bottom: 0.5rem;
-}
-
-/* --- Estilo Responsivo para Imagens --- */
-
-body img:not(.galeria img) {
-  max-width: 100%;
-  height: auto;    
-  display: block;  
-  margin-bottom: 20px;
-}
-
-
-
-
-img:last-child {
-  margin-bottom: 0;
-}
-
-
-
-.container-de-imagem {
-  text-align: center;
-}
-
-.container-de-imagem img {
-  margin: 0 auto; 
-}
-
-
-.imagem-pequena {
-  max-width: 300px; 
-}
-
-
-
-.imagem-50-porcento {
-  width: 50%; 
-  height: auto;
-}
-
-.galeria {
+.rodape-flex {
   display: flex;
-  flex-wrap: wrap;       
-  gap: 16px;              
-  justify-content: flex-start; 
-  padding-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
 }
 
-.galeria img {
-  width: 182px;            
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  object-fit: cover;
+.texto-cidade p {
+  margin: 4px 0;
 }
+
+.bandeira-cidade {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--cor-secundaria);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* --- RESPONSIVIDADE CORRIGIDA --- */
+@media (max-width: 768px) {
+  header .topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo-container {
+    max-width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .botoes-navegacao {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  /* Ajuste para a galeria: mantém o alinhamento lado a lado, mas reduz o tamanho */
+  .galeria {
+    gap: 10px; /* Reduz um pouco o espaçamento em telas menores */
+  }
+
+  .galeria img {
+    max-width: 150px; /* Reduz a largura das imagens para telas de tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .botoes-navegacao {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .logo-container h1 {
+    font-size: 1.5em;
+  }
+
+  /* Ajuste para a galeria: mantém o alinhamento lado a lado, mas reduz mais o tamanho */
+  .galeria img {
+    max-width: 100px; /* Reduz a largura das imagens para telas de celular */
+  }
+}
+/* --- FIM DA RESPONSIVIDADE CORRIGIDA --- */
