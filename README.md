@@ -1,4 +1,4 @@
-#Agrinho 2025
+# Agrinho 2025
 
 Este site foi feito como parte do concurso Agrinho 2025, na área de Programação Front-End.
 Eu escolhi falar sobre a Feira do Produtor da cidade de Curiúva (PR), pois ela mostra de forma especial como o campo e a cidade estão conectados no dia a dia.
