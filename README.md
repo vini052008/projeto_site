@@ -33,7 +33,7 @@ O que você encontra lá .
 Galeria de Fotos –
 Imagens dos produtos e da feira.
 
-Também esta presente no projeto através do Google Maps a localização onde ocorre a Feira do Produtor. Este repositório está marcado com a tag: "agrinho2025". E, foi Desenvolvido por mim, Vinicius Tosta, Aluno da 3ªSérie do Itinerário de Matemática e Ciências da Natureza – Ensino Médio do Colégio Estadual Professor Gabriel Rosa.
+Também esta presente no projeto, através do Google Maps, a localização onde ocorre a Feira do Produtor. Este repositório está marcado com a tag: "agrinho2025". E, foi Desenvolvido por mim, Vinicius Tosta, Aluno da 3ªSérie do Itinerário de Matemática e Ciências da Natureza – Ensino Médio do Colégio Estadual Professor Gabriel Rosa.
 
 Este site foi criado com muito carinho para mostrar como a cidade e o campo podem caminhar juntos.
 Projeto apresentado no concurso Agrinho 2025 – Festejando a Conexão Campo-Cidade.
