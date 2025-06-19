@@ -20,12 +20,18 @@ Artesanatos feitos com muito carinho, além de outros produtos de qualidade. Que
 As Imagens autorais, as fotos foram tiradas com o meu celular e com permissão dos produtores envolvidos. 
 
 O site está dividido nas seguintes seções: 
+
 Início – 
 Apresentação da feira. 
+
 Sobre a Feira – 
+
 Informações principais.
+
 Produtos – 
-O que você encontra lá . Galeria de Fotos –
+O que você encontra lá . 
+
+Galeria de Fotos –
 Imagens dos produtos e da feira.
 
 Também esta presente no projeto através do Google Maps a localização onde ocorre a Feira do Produtor. Este repositório está marcado com a tag: "agrinho2025". E, foi Desenvolvido por mim, Vinicius Tosta, Aluno da 3ªSérie do Itinerário de Matemática e Ciências da Natureza – Ensino Médio do Colégio Estadual Professor Gabriel Rosa.
