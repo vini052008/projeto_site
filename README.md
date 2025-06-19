@@ -3,7 +3,7 @@
 Este site foi feito como parte do concurso Agrinho 2025, na área de Programação Front-End.
 Eu escolhi falar sobre a Feira do Produtor da cidade de Curiúva (PR), pois ela mostra de forma especial como o campo e a cidade estão conectados no dia a dia.
 
-👉Clique aqui para acessar o link da página web [ok] (vini052008.github.io/projeto_site/)
+👉Clique aqui para acessar o link da página web  (https://vini052008.github.io/projeto_site/)
 
 Pois bem, neste projeto, eu optei por desenvolver uma página web retratando a importância dos produtores rurais locais.
 Fiz uma pesquisa de campo, conversei com alguns produtores da minha cidade e observei como a feira ajuda a aproximar o campo da cidade.
